@@ -1,5 +1,7 @@
 GitHub Repository:
 
+https://github.com/Freshlycut/Chatroom
+
 Secret key:
 
 q3Fp4gERGCsvHNq3pkwbpVOWzmYQJ5OU

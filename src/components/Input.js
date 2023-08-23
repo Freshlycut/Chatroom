@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Alert from "./Alert";
 import "./ComponentsStyle.css";
 
 export default function Input({ onSendMessage }) {
@@ -13,14 +12,6 @@ export default function Input({ onSendMessage }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (text.trim() === "") {
-      setShowAlert(true);
-    } else {
-      onSendMessage(text);
-      setText("");
-      setShowAlert(false);
-    }
   };
 
   return (
@@ -39,11 +30,7 @@ export default function Input({ onSendMessage }) {
           "
           ></i>
         </button>{" "}
-        {showAlert && (
-          <div>
-            <Alert />
-          </div>
-        )}
+        {showAlert && <div></div>}
       </form>
     </div>
   );
