@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-import Messages from "./components/Messages";
-import Input from "./components/Input";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Messages from "./components/MessageStructure/Messages";
+import Input from "./components/MessageInput/Input";
+import Navigation from "./components/NavigationInfo/Navigation";
+import Footer from "./components/AboutInfo/Footer";
 
 import ActiveUsers from "./components/Users/ActiveUsers";
-import randomName from "./components/Users/RandomName";
+import randomName from "./components/Helpers/RandomName";
 
 import Container from "react-bootstrap/Container";
 
@@ -79,10 +79,7 @@ function App() {
   };
 
   return (
-    <Container
-      className="groupContainer"
-      style={{ backgroundColor: "#2c2c2c" }}
-    >
+    <Container className="group-container">
       <div className="App">
         <Navigation />
         <div className="text-container">

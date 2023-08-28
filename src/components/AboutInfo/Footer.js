@@ -1,5 +1,5 @@
 import React from "react";
-import "./ComponentsStyle.css";
+import "./Footer.css";
 
 const Footer = () => (
   <footer className="page-footer font-small pt-4">
@@ -7,15 +7,15 @@ const Footer = () => (
       <div className="row">
         <div className="col-md ">
           <span>Chat by Renato Habijanec</span>
-          <div className="icons">
-            <span>
-              <i class="fa-brands fa-discord"></i>
+          <div>
+            <span className="icon-brands">
+              <i class="fa-brands fa-discord fa-xl"></i>
             </span>
-            <span>
-              <i class="fa-brands fa-github" />
+            <span className="icon-brands">
+              <i class="fa-brands fa-github fa-xl" />
             </span>
-            <span>
-              <i class="fa-brands fa-twitter"></i>
+            <span className="icon-brands">
+              <i class="fa-brands fa-twitter fa-xl"></i>
             </span>
           </div>
         </div>

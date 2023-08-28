@@ -1,0 +1,38 @@
+.head-active-users {
+    position: relative;
+    left: -500px;
+    top: -130px;
+}
+
+i{  
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+.card-small {
+	max-width: 14em;
+	margin: 0 auto;
+	text-transform: uppercase;
+    background-color: #0474ab;
+    border-radius: 5px;
+    padding: 25px;
+    position: relative;
+    top: -120px;
+}
+
+.card-small:hover{
+    background-color: #019ae6;
+}
+
+.card-title {
+	font-size: 1em;
+    color: white;
+    position: relative;
+    top: 17px;
+}
+
+.active-users {
+    border-radius: 5px;
+    color: white;
+}

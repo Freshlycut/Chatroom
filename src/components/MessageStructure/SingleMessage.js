@@ -1,4 +1,5 @@
 import React from "react";
+import "./MessageStyle.css";
 
 export default function SingleMessage({ message, currentUser }) {
   const member = message.member.clientData;

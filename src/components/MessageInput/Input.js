@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./ComponentsStyle.css";
+import "./Input.css";
 
 export default function Input({ onSendMessage }) {
   const [text, setText] = useState("");
-  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (e) => {
     setText(e.target.value);
@@ -12,10 +11,12 @@ export default function Input({ onSendMessage }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    onSendMessage(text);
+    setText("");
   };
 
   return (
-    <div className="input positionInput">
+    <div>
       <form onSubmit={handleSubmit}>
         <input
           onChange={handleChange}
@@ -24,13 +25,9 @@ export default function Input({ onSendMessage }) {
           placeholder="Enter your message and press ENTER"
           autoFocus
         />
-        <button className="sendBtn">
-          <i
-            class="fa-regular fa-envelope fa-lg
-          "
-          ></i>
+        <button className="sendBtn" type="input">
+          Send
         </button>{" "}
-        {showAlert && <div></div>}
       </form>
     </div>
   );

@@ -1,0 +1,9 @@
+.new-room-btn {
+   background-color: lightblue;
+   border-radius: 5px;
+   padding: 5px;
+   text-decoration: none;
+}
+
+.new-room-btn:hover {color: white;}
+
