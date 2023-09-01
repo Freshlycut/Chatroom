@@ -11,8 +11,12 @@ export default function Input({ onSendMessage }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSendMessage(text);
-    setText("");
+    if (text.trim() === "") {
+      alert("Error,Cannot send an empty message");
+    } else {
+      onSendMessage(text);
+      setText("");
+    }
   };
 
   return (
